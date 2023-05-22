@@ -3,6 +3,7 @@ package com.jiyun.Jpasession.domain;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -12,7 +13,26 @@ import javax.persistence.Table;
 @Entity
 public class Member {
     @Id
-    private long id;
+    @Column(name = "ID") //PK가 된다.
+    private String id;
+
+    @Column(name = "NAME")
+    private String username;
+
+    //매핑 정보가 없는 필드
+    private Integer age;
 
 
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public void setAge(Integer age) {
+        this.age = age;
+    }
 }
