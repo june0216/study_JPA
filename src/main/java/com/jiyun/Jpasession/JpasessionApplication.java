@@ -15,7 +15,7 @@ import java.util.List;
 public class JpasessionApplication {
 
 	public static void main(String[] args) {
-		EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");//엔티티 메니저 팩토리 생성
+/*		EntityManagerFactory emf = Persistence.createEntityManagerFactory("hello");//엔티티 메니저 팩토리 생성
 		EntityManager em = emf.createEntityManager(); //엔티티 매니저 생성
 		EntityTransaction tx = em.getTransaction(); //트랜잭션 획득
 
@@ -52,7 +52,7 @@ public class JpasessionApplication {
 			List<Member> members = em.createQuery("select m from Member m", Member.class).getResultList();
 
 
-		}
+		}*/
 		SpringApplication.run(JpasessionApplication.class, args);
 	}
 
