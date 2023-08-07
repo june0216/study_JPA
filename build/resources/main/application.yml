@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/testjpa?createDatabaseIfNotExist=true&characterEncoding=UTF-8&characterSetResults=UTF-8
+    username: root
+    password: 19990216
+  jpa:
+    hibernate:
+      ddl-auto: create
+    generate-ddl: true
+    show-sql: true
